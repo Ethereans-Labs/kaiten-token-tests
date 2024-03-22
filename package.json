@@ -1,0 +1,25 @@
+{
+    "name": "@ethereans-labs/kaiten-token-tests",
+    "version": "1.0.0",
+    "description": "Tests for the Kaiten Token and Kaiten DAO Treasury Bootstrap Initiative",
+    "scripts": {
+        "multiverse-test": "mocha",
+        "test": "mocha"
+    },
+    "keywords": [],
+    "author": "Ethereans Labs",
+    "license": "ISC",
+    "dependencies": {
+        "@ethereans-labs/kaiten-token": "git+https://github.com/ethereans-labs/kaiten-token.git",
+        "@ethereansos/multiverse": "git+https://github.com/EthereansOS/multiverse.git",
+        "@ethereansos/swissknife": "git+https://github.com/EthereansOS/swissknife.git#os_up_4"
+    },
+    "multiverse": {
+        "knowledgeBase": "resources/knowledgeBase",
+        "solidityVersion": "0.8.24"
+    },
+    "mocha": {
+        "timeout": false,
+        "require": "@ethereansos/multiverse"
+    }
+}
